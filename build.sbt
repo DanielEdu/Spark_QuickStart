@@ -11,6 +11,8 @@ libraryDependencies ++= {
   Seq(
     "org.apache.spark" %% "spark-core" % sparkV,
     "org.apache.spark" %% "spark-sql" % sparkV,
+    "org.apache.spark" %% "spark-streaming" % sparkV,
+    "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkV,
     "io.delta" %% "delta-core" % deltaV
   )
 }

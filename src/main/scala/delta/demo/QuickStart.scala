@@ -1,5 +1,4 @@
 package delta.demo
-// scalastyle:off println
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import io.delta.tables._
@@ -12,25 +11,20 @@ object QuickStart extends App{
 
   val spark = SparkSession.builder
     .master("local[*]")
-    .appName("MnMCount")
+    .appName("DeltaDemo")
     .getOrCreate
-
-  val sparkVersion = spark.version
-  val scalaVersion = util.Properties.versionNumberString
-
-  println("SPARK VERSION = " + sparkVersion)
-  println("SCALA VERSION = " + scalaVersion)
 
   //  -------------------------------------------------------------
   val deltaPath = "./tmp/loans_delta"
 
-
+/*
   // Create Data
   val data = spark.range(0, 5)
   data.write.format("delta").save(deltaPath)
 
   val df = spark.read.format("delta").load(deltaPath)
   df.show()
+
 
   // Overwrite
   println("----  Overwrite  ----")
@@ -44,11 +38,12 @@ object QuickStart extends App{
   val df_v2 = spark.read.format("delta").load(deltaPath)
   df_v2.show()
 
+
   // Read older version of data using time travel
   println("----  Time Travel  ----")
   val df_rb = spark.read.format("delta").option("versionAsOf", 0).load(deltaPath)
   df_rb.show()
-
+*/
 
   // Append
   println("----  Append  ----")
