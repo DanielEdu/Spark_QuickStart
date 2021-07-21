@@ -1,4 +1,4 @@
-package delta.demo.utils
+package demo.deltalake.utils
 
 object Constants {
   val PATH = "./tmp/datalake/events"

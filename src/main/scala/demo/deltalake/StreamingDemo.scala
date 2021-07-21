@@ -1,5 +1,6 @@
-package delta.demo
-import delta.demo.utils.{Utils, Constants}
+package demo.deltalake
+
+import demo.deltalake.utils.{Constants, Utils}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{SparkSession, _}
 import org.apache.spark.sql.functions.from_json

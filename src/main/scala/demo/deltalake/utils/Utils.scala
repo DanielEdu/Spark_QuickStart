@@ -1,4 +1,4 @@
-package delta.demo.utils
+package demo.deltalake.utils
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}

@@ -1,8 +1,8 @@
-package delta.demo
+package demo.deltalake
 
+import demo.deltalake.utils.Constants
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
-import delta.demo.utils.Constants
 
 object QueryToStreaming extends App {
 

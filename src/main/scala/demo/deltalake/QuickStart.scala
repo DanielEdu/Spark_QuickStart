@@ -1,4 +1,5 @@
-package delta.demo
+package demo.deltalake
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import io.delta.tables._

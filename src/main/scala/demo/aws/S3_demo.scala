@@ -1,4 +1,4 @@
-package aws.demo
+package demo.aws
 
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{SaveMode, SparkSession}
@@ -7,8 +7,8 @@ object S3_demo extends App {
   Logger.getLogger("akka").setLevel(Level.OFF)
   Logger.getLogger("org").setLevel(Level.OFF)
 
-  val s3Dan = "s3a://danielpoc/events.json"
-  val s3DanOut = "s3a://danielpoc"
+  val s3Dan = "s3a://danielpoc/events.json"    //filename
+  val s3DanOut = "s3a://danielpoc"             // output
 
 
   val spark = SparkSession.builder
