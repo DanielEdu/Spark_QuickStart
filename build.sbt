@@ -8,6 +8,7 @@ libraryDependencies ++= {
   val sparkV = "3.1.2"
   val deltaV = "1.0.0"
   val hadoopV = "3.3.1"
+  val eventhubV = "2.3.20"
 
   Seq(
     "org.apache.spark" %% "spark-core" % sparkV,
@@ -17,6 +18,11 @@ libraryDependencies ++= {
     "io.delta" %% "delta-core" % deltaV,
     "org.apache.hadoop" % "hadoop-common" % hadoopV,
     "org.apache.hadoop" % "hadoop-client" % hadoopV,
-    "org.apache.hadoop" % "hadoop-aws" % hadoopV
+    "org.apache.hadoop" % "hadoop-aws" % hadoopV,
+    // azure
+    "com.microsoft.azure" %% "azure-eventhubs-spark" % eventhubV
   )
 }
+
+// for azure EventHub
+//dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-databind" % "2.6.7"
