@@ -13,6 +13,9 @@ libraryDependencies ++= {
     "org.apache.spark" %% "spark-sql" % sparkV,
     "org.apache.spark" %% "spark-streaming" % sparkV,
     "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkV,
-    "io.delta" %% "delta-core" % deltaV
+    "io.delta" %% "delta-core" % deltaV,
+    "org.apache.hadoop" % "hadoop-common" % "3.3.1",
+    "org.apache.hadoop" % "hadoop-client" % "3.3.1",
+    "org.apache.hadoop" % "hadoop-aws" % "3.3.1"
   )
 }
